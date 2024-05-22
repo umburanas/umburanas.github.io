@@ -3,8 +3,8 @@
 - Outubro 2022
 
 <p float="left">
-	<img src="figuras/geral/outubro22_01.png" width="400" /> <figcaption>Visão aérea SAFs 01-03.</figcaption>
-	<img src="figuras/geral/outubro22_02.png" width="400" /> <figcaption>Visão da porteira.</figcaption>
+	<img src="figuras/geral/outubro22_01.png" width="400" alt="Visão aérea SAFs 01-03" />
+	<img src="figuras/geral/outubro22_02.png" width="400" alt="Visão da porteira" />
 </p>
 
 
