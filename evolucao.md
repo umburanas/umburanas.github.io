@@ -1,7 +1,11 @@
 # Visao Geral
 
 - Outubro 2022
-![Visão aérea SAFs 01-03](figuras/geral/outubro22_01.png) ![SAF02](figuras/geral/outubro22_02.png)
+
+<p float="left">
+	<img src="figuras/geral/outubro22_01.png" width="400" /> <figcaption>Visão aérea SAFs 01-03.</figcaption>
+	<img src="figuras/geral/outubro22_02.png" width="400" /> <figcaption>Visão da porteira.</figcaption>
+</p>
 
 
 # Area 01
