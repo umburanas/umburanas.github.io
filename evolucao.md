@@ -1,5 +1,9 @@
 # Visao Geral
 
+<p float="center">
+	<img src="figuras/geral/overview.png" width="400" alt="Os SAFs" />
+</p>
+
 - Outubro 2022
 
 <p float="left">
