@@ -1,4 +1,4 @@
-# Algumas matrizes interessantes para a Caatinga [^1]
+# Exemplos de matrizes para a Caatinga [^1]
 
 | Espécie               | Extrato           | Tempo Produtivo                           | Sucessão            | Porte                            |
 |:----------------------|:------------------|:------------------------------------------|:--------------------|:---------------------------------|
