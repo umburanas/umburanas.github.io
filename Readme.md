@@ -3,4 +3,4 @@ Neste espaço, você encontrará informações sobre a agrofloresta Umburanas, c
 - [História e atualidade](historia.md)
 - [Evolução das áreas](evolucao.md)
 - Consórcios
-- Tabela de extratificação na Caatinga
+- [Tabela de extratificação na Caatinga](tabelas/algumas_matrizes_para_utilizar_na_caatinga.md)
