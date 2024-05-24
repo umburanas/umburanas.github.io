@@ -11,6 +11,9 @@
 	<img src="figuras/geral/outubro22_02.png" width="400" alt="Visão da porteira" />
 </p>
 
+<a href="{{ site.baseurl }}figuras/geral/outubro22_01.png" target="_blank">
+  <img src="figuras/geral/thumbnails/outubro22_01.png" alt="Thumbnail" />
+</a>
 
 # Area 01
 
