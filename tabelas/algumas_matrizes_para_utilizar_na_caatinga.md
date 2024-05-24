@@ -145,4 +145,4 @@
 | Velame                |  ?                |  ?                                        |  ?                  |  ?                               |
 | Xique-xique           | Alto / Emergente? |  ?                                        |  ?                  | 4 m                              |
 
-[^1]: Agradecimento especial a Iohann Rolof pela iniciativa deste trabalho.
+[^1]: Agradecimento especial a Iohann Rollof pela iniciativa deste trabalho.
