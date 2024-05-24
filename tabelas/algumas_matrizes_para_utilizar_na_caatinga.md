@@ -1,3 +1,5 @@
+# Algumas matrizes interessantes para a Caatinga [^1]
+
 | Espécie               | Extrato           | Tempo Produtivo                           | Sucessão            | Porte                            |
 |:----------------------|:------------------|:------------------------------------------|:--------------------|:---------------------------------|
 | Abacaxi               | Baixo / Médio     | 2 anos                                    | Secundária I        |  ?                               |
@@ -142,3 +144,5 @@
 | Umburana-de-cambão    | Alto / Emergente? |  ?                                        |  ?                  | 6 - 9 m                          |
 | Velame                |  ?                |  ?                                        |  ?                  |  ?                               |
 | Xique-xique           | Alto / Emergente? |  ?                                        |  ?                  | 4 m                              |
+
+[^1]: Agradecimento especial a Iohann Rolof pela iniciativa deste trabalho.
