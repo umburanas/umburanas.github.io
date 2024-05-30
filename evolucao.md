@@ -18,6 +18,15 @@
 
 # Area 01
 
+<p float="left">
+	<a href="figuras/saf01/saf01_2022_10.png" target="_blank">
+        <img src="figuras/geral/thumbnails/saf01_2022_10.png" alt="Thumbnail" />
+    </a>
+	<a href="figuras/saf01/saf01_2023_03.png" target="_blank">
+        <img src="figuras/geral/thumbnails/saf01_2023_03.png" alt="Thumbnail" />
+    </a>
+</p>
+
 # Area 02
 
 - Outubro 2022
