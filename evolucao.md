@@ -22,10 +22,10 @@ Outubro 2022 à esquerda e Março 2023 à direita
 
 
 <p float="left">
-	<a href="figuras/saf01/saf01_2022_10.png" target="_blank">
+	<a title="Outubro 2022" href="figuras/saf01/saf01_2022_10.png" target="_blank">
         <img src="figuras/saf01/thumbnails/saf01_2022_10.png" alt="Thumbnail" />
     </a>
-	<a href="figuras/saf01/saf01_2023_03.png" target="_blank">
+	<a title="Março 2023" href="figuras/saf01/saf01_2023_03.png" target="_blank">
         <img src="figuras/saf01/thumbnails/saf01_2023_03.png" alt="Thumbnail" />
     </a>
 </p>
