@@ -1,16 +1,16 @@
 # Visao Geral
 
 <p float="center">
-	<img src="figuras/geral/overview.png" width="400" alt="Os SAFs" />
+	<img src="figuras/geral/overview.gif" width="400" alt="Os SAFs" />
 </p>
 
 - Outubro 2022
 
 <p float="left">
-	<a href="figuras/geral/outubro22_01.png" target="_blank">
+	<a title="Outubro 2022" href="figuras/geral/outubro22_01.png" target="_blank">
         <img src="figuras/geral/thumbnails/outubro22_01.png" alt="Thumbnail" />
     </a>
-	<a href="figuras/geral/outubro22_02.png" target="_blank">
+	<a title="Março 2023" href="figuras/geral/outubro22_02.png" target="_blank">
         <img src="figuras/geral/thumbnails/outubro22_02.png" alt="Thumbnail" />
     </a>
 </p>
