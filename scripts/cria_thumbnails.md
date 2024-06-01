@@ -13,7 +13,7 @@
 # 4. Reduz a foto para 400x400
 # 5. Apaga o arquivo temporario
 
-for format in jpg png; do
+for format in jpg jpeg png; do
   for picture in $(find . -name *.$format); do
     # ignore as fotos que ja sao thumbnails
      if [[ "$picture" == *"thumbnails"* ]]; then
