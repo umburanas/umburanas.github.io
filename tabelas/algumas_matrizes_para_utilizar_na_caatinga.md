@@ -1,5 +1,9 @@
 # Exemplos de matrizes para a Caatinga [^1]
 
+Aqui estão algumas matrizes que foram propostas como possibilidades para um SAF na Caatinga. 
+Nem todas são endêmicas da região, mas se adaptam bem ao clima e solo.
+A tabela é uma compilação de informações de diversas fontes, e pode conter erros. Se você encontrar algum erro, ou estiver interessado em ajudar a corrigir ou extender as informações aqui encontrada, por favor, [entre em contato](../contato.md).
+
 | Espécie               | Extrato           | Tempo Produtivo                           | Sucessão            | Porte                            |
 |:----------------------|:------------------|:------------------------------------------|:--------------------|:---------------------------------|
 | Abacaxi               | Baixo / Médio     | 2 anos                                    | Secundária I        |  ?                               |
