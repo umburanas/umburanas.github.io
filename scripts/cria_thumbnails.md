@@ -1,3 +1,8 @@
+# Thumbnails script
+
+- Sistema operacional: Mac, mas deve funcionar em qualquer distro Linux
+- Linguagem: bash
+
 ````bash
 #!/bin/bash
 
