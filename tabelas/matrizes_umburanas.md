@@ -3,6 +3,7 @@
 Aqui listamos algumas matrizes que encontramos na agrofloresta Umburanas, que planejamos futuramente criar um banco de sementes. 
 A lista está incompleta, e será atualizada colaborativamente ao longo do tempo. 
 Caso você conheça alguma destas matrizes que está incompleta ou errada na tabela, por favor, entre em contato, nos ajudando a corrigir.
+Perceba que a época de frutificação é uma média, e pode variar de acordo com o clima e a localização. Primeiramente, estou colocando as épocas como encontradas na Internet, ao longo do tempo elas podem ser atualizadas com base em observações locais.
 
 
 Nome | Frutificacao
