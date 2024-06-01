@@ -30,4 +30,5 @@ for format in jpg jpeg png; do
     convert ${target_pic}.tmp -resize 300x300 "$target_pic"
     rm -f ${target_pic}.tmp
   done
-done````
+done
+````
