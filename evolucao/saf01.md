@@ -6,15 +6,6 @@
 
 ## Fotos 
 
-<p float="left">
-	<a title="Outubro 2022" href="../figuras/saf01/saf01_2022_10.png" target="_blank">
-        <img src="../figuras/saf01/thumbnails/saf01_2022_10.png" alt="Thumbnail" />
-    </a>
-	<a title="Março 2023" href="../figuras/saf01/saf01_2023_03.png" target="_blank">
-        <img src="../figuras/saf01/thumbnails/saf01_2023_03.png" alt="Thumbnail" />
-    </a>	
-</p>
-
 - Vista superior
 - Esquerda: Outubro 2022 ; Direita: Março 2023
 
