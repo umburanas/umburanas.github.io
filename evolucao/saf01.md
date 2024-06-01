@@ -1,7 +1,10 @@
 # SAF 01
 
+## Informações
 - Início: março 2023
 - Tamanho: 6x10 metros
+
+## Fotos 
 
 <p float="left">
 	<a title="Outubro 2022" href="../figuras/saf01/saf01_2022_10.png" target="_blank">

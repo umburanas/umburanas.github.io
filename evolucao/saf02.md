@@ -1,9 +1,14 @@
 # SAF 02
 
+## Informações
+
 - Início: Dezembro 2023
 - Tamanho: 20x30 metros
 
+## Fotos
+
 - Antes de limpar, outubro 2022
+
 <p>
 	<a title="Antes de limpar" href="../figuras/saf02/outubro22_03.png" target="_blank">
         <img src="../figuras/saf02/thumbnails/outubro22_03.png" alt="Thumbnail" />
