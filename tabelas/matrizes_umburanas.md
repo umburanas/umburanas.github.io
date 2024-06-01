@@ -1,8 +1,9 @@
 # Matrizes:
 
-Aqui listamos algumas matrizes que encontramos na agrofloresta Umburanas. 
+Aqui listamos algumas matrizes que encontramos na agrofloresta Umburanas, que planejamos futuramente criar um banco de sementes. 
 A lista está incompleta, e será atualizada colaborativamente ao longo do tempo. 
 Caso você conheça alguma destas matrizes que está incompleta ou errada na tabela, por favor, entre em contato, nos ajudando a corrigir.
+
 
 Nome | Frutificacao
 --- | ---
