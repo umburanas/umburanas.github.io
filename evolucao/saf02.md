@@ -23,10 +23,10 @@
     </a>	
 </p>
 
-- Após primeira poda, janeiro 2024
+- Após roçar pela primeira vez, janeiro 2024
 
 <p>
-	<a title="Após primeira poda" href="../figuras/saf02/2024_01_depois_da_poda.jpeg" target="_blank">
+	<a title="Após roçar pela primeira vez" href="../figuras/saf02/2024_01_depois_da_poda.jpeg" target="_blank">
         <img src="../figuras/saf02/thumbnails/2024_01_depois_da_poda.jpeg" alt="Thumbnail" />
     </a>	
 </p>
