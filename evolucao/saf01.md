@@ -29,3 +29,9 @@
     <a title="Janeiro 2024 esquerda" href="../figuras/saf01/2024_01_31_esquerda.jpeg" target="_blank"> <img src="../figuras/saf01/thumbnails/2024_01_31_esquerda.jpeg" alt="Thumbnail" /> </a>
     <a title="Maio, 31, direita" href="../figuras/saf01/2024_05_31_esquerda.jpeg" target="_blank"> <img src="../figuras/saf01/thumbnails/2024_05_31_esquerda.jpeg" alt="Thumbnail" /></a> 
 </p>
+
+- Lado direito: 08.09.2024
+
+<p> 
+    <a title="Setembro 2024" href="../figuras/saf01/saf01_2024_09_08_01.jpeg" target="_blank"> <img src="../figuras/saf01/thumbnails/saf01_2024_09_08_01.jpeg" 
+</p>
