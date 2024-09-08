@@ -46,7 +46,7 @@
     <a title="08 de setembro de 2024 esquerda" href="../figuras/saf02/saf02_2024_09_08_primeira_linha.jpeg" target="_blank">
         <img src="../figuras/saf02/thumbnails/saf02_2024_09_08_primeira_linha.jpeg" alt="Thumbnail" />
     </a>
-    <a title="08 de setembro de 2024 direita" href="../figuras/saf02/thumbnails/saf02_2024_09_08_ultima_linha.jpeg" target="_blank">
+    <a title="08 de setembro de 2024 direita" href="../figuras/saf02/saf02_2024_09_08_ultima_linha.jpeg" target="_blank">
         <img src="../figuras/saf02/thumbnails/saf02_2024_09_08_ultima_linha.jpeg" alt="Thumbnail" />
     </a>
 </p>
