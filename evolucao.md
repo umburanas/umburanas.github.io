@@ -1,5 +1,6 @@
 # Visao Geral
 
+Areas[.](maps/interactive/index.html)
 <p float="center">
 	<img src="figuras/geral/overview.gif" width="400" alt="Os SAFs" />
 </p>
