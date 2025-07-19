@@ -6,6 +6,7 @@ Neste espaço, você encontrará informações sobre a agrofloresta Umburanas, c
 - [Consórcios](consorcios.md)
 - [Tabela de extratificação da Caatinga](tabelas/algumas_matrizes_para_utilizar_na_caatinga.md)
 - [Tabela de matrizes](tabelas/matrizes_umburanas.md)
+- [Automação](automacao.md)
 - [Outros recursos](recursos.md)
 - [Sobre este site](sobre.md)
 - [Contato](contato.md)
