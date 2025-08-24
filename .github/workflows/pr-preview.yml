@@ -18,7 +18,7 @@ jobs:
         if: github.event.action != 'closed'
         run: |
           bundle install
-          bundle exec jekyll build --baseurl ""
+          bundle exec jekyll build
       - name: Deploy PR preview
         if: github.event.action != 'closed'
         uses: rossjrw/pr-preview-action@v1
@@ -32,4 +32,3 @@ jobs:
         with:
           action: remove
           preview-branch: gh-pages
-
