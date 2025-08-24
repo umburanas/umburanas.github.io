@@ -1,19 +1,35 @@
 name: PR Preview
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
+  pull_request: { types: [opened, synchronize, reopened, closed] }
 permissions:
   contents: write
   pages: write
   id-token: write
 jobs:
-  build:
+  build-and-preview:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # build your site here if needed (npm run build / jekyll build, etc.)
-      - uses: rossjrw/pr-preview-action@v1
+      - uses: ruby/setup-ruby@v1
         with:
-          source-dir: .          # or your built output dir
+          ruby-version: '3.3'
+          bundler-cache: true
+      - name: Build Jekyll
+        if: github.event.action != 'closed'
+        run: |
+          bundle install
+          bundle exec jekyll build --baseurl ""
+      - name: Deploy PR preview
+        if: github.event.action != 'closed'
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: _site
+          # this should match the branch your Pages site deploys from
+          preview-branch: gh-pages
+      - name: Remove preview on close
+        if: github.event.action == 'closed'
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          action: remove
           preview-branch: gh-pages
 
