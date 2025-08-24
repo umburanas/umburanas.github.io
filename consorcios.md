@@ -1,6 +1,16 @@
-# Consórcios agroflorestais
+---
+layout: default
+title: Consórcios Agroflorestais
+description: Planejamento e implementação de consórcios agroflorestais no projeto Umburanas, comparando o idealizado com o efetivamente implementado.
+---
 
-Neste espaço, você encontrará informações sobre consórcios agroflorestais utilizados ou propostos em nossas areas.
+# Consórcios Agroflorestais
+
+[← Voltar ao início](index.md) | [História →](historia.md) | [Evolução →](evolucao.md)
+
+Neste espaço, você encontrará informações sobre consórcios agroflorestais utilizados ou propostos em nossas áreas. Os diagramas mostram tanto o planejamento inicial quanto a implementação real, permitindo visualizar adaptações necessárias durante o processo.
+
+## 🎯 SAF01 - Primeira Área (6x10m)
 
 - Area 01: idealizado vs implementado
 

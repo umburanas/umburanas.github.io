@@ -1,5 +1,78 @@
-remote_theme: pages-themes/hacker@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+# Site settings
 title: Umburanas
-description: Sistema Agroflorestal Sintrópico em Monte Branco
+description: >- # this means to ignore newlines until "baseurl:"
+  Documentação e evolução de um projeto agroflorestal sintrópico em Monte Branco.
+  Compartilhando experiências, técnicas e aprendizados sobre sistemas agroflorestais
+  sustentáveis na região da Caatinga.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://umburanas.github.io" # the base hostname & protocol for your site
+
+# SEO settings
+author: Projeto Umburanas
+keywords: agrofloresta, sistema agroflorestal, sintropia, caatinga, sustentabilidade, permacultura
+lang: pt-BR
+
+# Social media
+github_username: umburanas
+
+# Theme and plugins
+remote_theme: pages-themes/minima@v2.5.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - historia.md
+  - evolucao.md
+  - consorcios.md
+  - recursos.md
+  - sobre.md
+  - contato.md
+
+# Collections
+collections:
+  evolucao:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "evolucao"
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - figuras_nao_usadas_ainda/
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

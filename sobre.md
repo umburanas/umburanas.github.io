@@ -1,6 +1,16 @@
-# Sobre
+---
+layout: default
+title: Sobre o Site Umburanas
+description: Como o site foi construído, tecnologias utilizadas e ferramentas desenvolvidas para documentar o projeto agroflorestal Umburanas.
+---
+
+# Sobre Este Site
+
+[← Voltar ao início](index.md) | [Contato →](contato.md)
 
 Este site foi criado com o intuito de documentar a evolução do projeto agroflorestal em Umburanas, compartilhar informações e fornecer um meio de contato de forma simples e gratuita. Acreditando que esta ferramenta pode ser de interesse para outras pessoas, decidimos documentar os principais processos que usamos, visando possivelmente reduzir ou acelerar o trabalho de outros.
+
+## 🛠️ Tecnologias Utilizadas
 
 - **GitHub**: O site é hospedado no GitHub, permitindo armazenamento sem custo e a possibilidade de gerenciamento de versões, garantindo que nada seja perdido.
 - **Markdown**: Escrevemos o site em um formato simples, que não requer do usuário um conhecimento técnico avançado para editar ou criar novas páginas.
