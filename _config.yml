@@ -86,6 +86,9 @@ exclude:
   - vendor/ruby/
   - figuras_nao_usadas_ainda/
   - tabelas/venv/
+  - tabelas/pdf/venv/
+  - "**/*.pyc"
+  - "**/__pycache__/"
 
 # Markdown settings
 markdown: kramdown

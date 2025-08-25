@@ -17,6 +17,19 @@ Gemfile.lock
 # Logs
 *.log
 
+# Python
+venv/
+env/
+.venv/
+.env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
 # Temporary files
 *~
 .tmp
