@@ -1,1 +1,22 @@
+# macOS
 .DS_Store
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+.bundle/
+vendor/
+
+# Ruby
+Gemfile.lock
+
+# Logs
+*.log
+
+# Temporary files
+*~
+.tmp
