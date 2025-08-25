@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://umburanas.github.io/tabelas/algumas_matrizes_para_utilizar_na_caatinga.html</loc>
+</url>
+<url>
 <loc>https://umburanas.github.io/consorcios.html</loc>
 </url>
 <url>
@@ -22,10 +25,16 @@
 <loc>https://umburanas.github.io/evolucao/saf01.html</loc>
 </url>
 <url>
+<loc>https://umburanas.github.io/evolucao/saf02.html</loc>
+</url>
+<url>
+<loc>https://umburanas.github.io/evolucao/saf03.html</loc>
+</url>
+<url>
 <loc>https://umburanas.github.io/sobre.html</loc>
 </url>
 <url>
 <loc>https://umburanas.github.io/maps/interactive/</loc>
-<lastmod>2025-08-24T22:54:37+00:00</lastmod>
+<lastmod>2025-08-25T08:28:37+00:00</lastmod>
 </url>
 </urlset>
