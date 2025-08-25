@@ -20,24 +20,64 @@
 {"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Projeto Umburanas"},"description":"Acompanhe a evolução temporal das diferentes áreas do projeto agroflorestal Umburanas, desde a implementação até o desenvolvimento atual.","headline":"Evolução das Áreas - Projeto Umburanas","url":"http://0.0.0.0:4000/evolucao.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Umburanas" /></head>
-<body><header class="site-header" role="banner">
+<body>
+    <!-- Modern Sidebar Layout -->
+    <div class="app-container">
+        <!-- Independent Sidebar -->
+        <nav class="modern-sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <a href="/%20/" class="brand-link">
+                    <h2 class="brand-title">Umburanas</h2>
+                </a>
+            </div>
 
-    <div class="wrapper"><a class="site-title" rel="author" href="/%20/">Umburanas</a><nav class="site-nav">
-            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-            <label for="nav-trigger">
-                <span class="menu-icon">
-                    <svg viewBox="0 0 18 15" width="18px" height="15px">
-                        <path
-                            d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.484C18,14.304,17.335,14.969,16.516,14.969H1.484 C0.665,14.969,0,14.304,0,13.484l0,0C0,12.665,0.665,12,1.484,12h15.032C17.335,12,18,12.665,18,13.484L18,13.484z" />
-                    </svg>
-                </span>
-            </label>
+            <div class="sidebar-menu">
+                <ul class="menu-list"><li class="menu-item">
+                        <a class="menu-link "
+                            href="/">
+                            <span class="menu-text">Início</span>
+                        </a>
+                    </li><li class="menu-item">
+                        <a class="menu-link "
+                            href="/historia.html">
+                            <span class="menu-text">História</span>
+                        </a>
+                    </li><li class="menu-item">
+                        <a class="menu-link active"
+                            href="/evolucao.html">
+                            <span class="menu-text">Evolução</span>
+                        </a>
+                    </li><li class="menu-item">
+                        <a class="menu-link "
+                            href="/consorcios.html">
+                            <span class="menu-text">Consórcios</span>
+                        </a>
+                    </li><li class="menu-item">
+                        <a class="menu-link "
+                            href="/recursos.html">
+                            <span class="menu-text">Recursos</span>
+                        </a>
+                    </li><li class="menu-item">
+                        <a class="menu-link "
+                            href="/sobre.html">
+                            <span class="menu-text">Sobre</span>
+                        </a>
+                    </li><li class="menu-item">
+                        <a class="menu-link "
+                            href="/contato.html">
+                            <span class="menu-text">Contato</span>
+                        </a>
+                    </li></ul>
+            </div>
 
-            <div class="trigger"><a class="page-link" href="/">Início</a><a class="page-link" href="/historia.html">História</a><a class="page-link" href="/evolucao.html">Evolução</a><a class="page-link" href="/consorcios.html">Consórcios</a><a class="page-link" href="/recursos.html">Recursos</a><a class="page-link" href="/sobre.html">Sobre</a><a class="page-link" href="/contato.html">Contato</a><div class="language-selector">
-    <button class="flag-btn" data-lang="pt" title="Português">🇧🇷</button>
-    <button class="flag-btn" data-lang="es" title="Español">🇪🇸</button>
-    <button class="flag-btn" data-lang="en" title="English">🇬🇧</button>
-    <button class="flag-btn" data-lang="de" title="Deutsch">🇩🇪</button>
+            <div class="sidebar-footer"><div class="language-selector">
+    <div class="language-title">Idioma / Language</div>
+    <div class="language-flags">
+        <button class="flag-btn" data-lang="pt" title="Português">🇧🇷</button>
+        <button class="flag-btn" data-lang="es" title="Español">🇪🇸</button>
+        <button class="flag-btn" data-lang="en" title="English">🇬🇧</button>
+        <button class="flag-btn" data-lang="de" title="Deutsch">🇩🇪</button>
+    </div>
 </div>
 
 <script>
@@ -123,8 +163,9 @@
                 'contato.html': 'Contato'
             };
 
-            // Update navigation menu
-            document.querySelectorAll('.site-nav .page-link').forEach(link => {
+            // Update navigation menu (modern sidebar)
+            document.querySelectorAll('.menu-link .menu-text').forEach(menuText => {
+                const link = menuText.closest('.menu-link');
                 const href = link.getAttribute('href');
                 if (href) {
                     // Extract filename from href
@@ -132,7 +173,7 @@
                     const originalKey = linkMapping[filename];
 
                     if (originalKey && translations[lang] && translations[lang][originalKey]) {
-                        link.textContent = translations[lang][originalKey];
+                        menuText.textContent = translations[lang][originalKey];
                     }
                 }
             });
@@ -144,11 +185,14 @@
         }
     });
 </script></div>
-        </nav></div>
+        </nav>
 
-</header><main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <h1 id="evolução-das-áreas">Evolução das Áreas</h1>
+        <!-- Main Content Area -->
+        <div class="main-area">
+            <!-- Content -->
+            <main class="content-wrapper">
+                <div class="content-inner">
+                    <h1 id="evolução-das-áreas">Evolução das Áreas</h1>
 
 <p>Acompanhe a evolução temporal das diferentes áreas do projeto Umburanas. Cada área representa uma fase de aprendizado e adaptação às condições locais da Caatinga.</p>
 
@@ -333,8 +377,11 @@
 
 <hr />
 
-      </div>
-    </main><footer class="site-footer h-card">
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="content-footer"><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">
@@ -358,6 +405,67 @@
   </div>
 
 </footer>
+</footer>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-toggle" id="mobile-toggle">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <!-- Mobile Overlay -->
+        <div class="mobile-overlay" id="mobile-overlay"></div>
+    </div>
+
+    <script>
+        // Modern sidebar functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const sidebar = document.getElementById('sidebar');
+            const mobileToggle = document.getElementById('mobile-toggle');
+            const mobileOverlay = document.getElementById('mobile-overlay');
+
+            function toggleMobileSidebar() {
+                sidebar.classList.toggle('mobile-open');
+                mobileOverlay.classList.toggle('active');
+                document.body.classList.toggle('sidebar-mobile-open');
+            }
+
+            function closeMobileSidebar() {
+                sidebar.classList.remove('mobile-open');
+                mobileOverlay.classList.remove('active');
+                document.body.classList.remove('sidebar-mobile-open');
+            }
+
+            // Mobile toggle button
+            if (mobileToggle) {
+                mobileToggle.addEventListener('click', toggleMobileSidebar);
+            }
+
+            // Overlay click to close
+            if (mobileOverlay) {
+                mobileOverlay.addEventListener('click', closeMobileSidebar);
+            }
+
+            // Close on window resize if mobile
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768) {
+                    closeMobileSidebar();
+                }
+            });
+
+            // Close sidebar when clicking menu links on mobile
+            document.querySelectorAll('.menu-link').forEach(link => {
+                link.addEventListener('click', function () {
+                    if (window.innerWidth <= 768) {
+                        closeMobileSidebar();
+                    }
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>

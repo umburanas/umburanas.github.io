@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+
+{%- include head.html -%}
+
+<body>
+    <!-- Modern Sidebar Layout -->
+    <div class="app-container">
+        <!-- Independent Sidebar -->
+        <nav class="modern-sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <a href="{{ " /" | relative_url }}" class="brand-link">
+                    <h2 class="brand-title">{{ site.title | escape }}</h2>
+                </a>
+            </div>
+
+            <div class="sidebar-menu">
+                <ul class="menu-list">
+                    {%- assign default_paths = site.pages | map: "path" -%}
+                    {%- assign page_paths = site.header_pages | default: default_paths -%}
+                    {%- for path in page_paths -%}
+                    {%- assign my_page = site.pages | where: "path", path | first -%}
+                    {%- if my_page.title -%}
+                    {%- assign nav_title = site.navigation[path] | default: my_page.title -%}
+                    <li class="menu-item">
+                        <a class="menu-link {% if page.url == my_page.url %}active{% endif %}"
+                            href="{{ my_page.url | relative_url }}">
+                            <span class="menu-text">{{ nav_title | escape }}</span>
+                        </a>
+                    </li>
+                    {%- endif -%}
+                    {%- endfor -%}
+                </ul>
+            </div>
+
+            <div class="sidebar-footer">
+                {%- include language-selector.html -%}
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="main-area">
+            <!-- Content -->
+            <main class="content-wrapper">
+                <div class="content-inner">
+                    {{ content }}
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="content-footer">
+                {%- include footer.html -%}
+            </footer>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-toggle" id="mobile-toggle">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <!-- Mobile Overlay -->
+        <div class="mobile-overlay" id="mobile-overlay"></div>
+    </div>
+
+    <script>
+        // Modern sidebar functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const sidebar = document.getElementById('sidebar');
+            const mobileToggle = document.getElementById('mobile-toggle');
+            const mobileOverlay = document.getElementById('mobile-overlay');
+
+            function toggleMobileSidebar() {
+                sidebar.classList.toggle('mobile-open');
+                mobileOverlay.classList.toggle('active');
+                document.body.classList.toggle('sidebar-mobile-open');
+            }
+
+            function closeMobileSidebar() {
+                sidebar.classList.remove('mobile-open');
+                mobileOverlay.classList.remove('active');
+                document.body.classList.remove('sidebar-mobile-open');
+            }
+
+            // Mobile toggle button
+            if (mobileToggle) {
+                mobileToggle.addEventListener('click', toggleMobileSidebar);
+            }
+
+            // Overlay click to close
+            if (mobileOverlay) {
+                mobileOverlay.addEventListener('click', closeMobileSidebar);
+            }
+
+            // Close on window resize if mobile
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768) {
+                    closeMobileSidebar();
+                }
+            });
+
+            // Close sidebar when clicking menu links on mobile
+            document.querySelectorAll('.menu-link').forEach(link => {
+                link.addEventListener('click', function () {
+                    if (window.innerWidth <= 768) {
+                        closeMobileSidebar();
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
