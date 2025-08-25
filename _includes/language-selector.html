@@ -1,8 +1,11 @@
 <div class="language-selector">
-    <button class="flag-btn" data-lang="pt" title="Português">🇧🇷</button>
-    <button class="flag-btn" data-lang="es" title="Español">🇪🇸</button>
-    <button class="flag-btn" data-lang="en" title="English">🇬🇧</button>
-    <button class="flag-btn" data-lang="de" title="Deutsch">🇩🇪</button>
+    <div class="language-title">Idioma / Language</div>
+    <div class="language-flags">
+        <button class="flag-btn" data-lang="pt" title="Português">🇧🇷</button>
+        <button class="flag-btn" data-lang="es" title="Español">🇪🇸</button>
+        <button class="flag-btn" data-lang="en" title="English">🇬🇧</button>
+        <button class="flag-btn" data-lang="de" title="Deutsch">🇩🇪</button>
+    </div>
 </div>
 
 <script>
@@ -88,18 +91,22 @@
                 'contato.html': 'Contato'
             };
 
-            // Update navigation menu
-            document.querySelectorAll('.site-nav .page-link').forEach(link => {
-                const href = link.getAttribute('href');
-                if (href) {
-                    // Extract filename from href
-                    const filename = href.split('/').pop();
-                    const originalKey = linkMapping[filename];
+            // Update navigation menu (both sidebar and top nav if present)
+            const navSelectors = ['.sidebar-nav-link', '.site-nav .page-link'];
 
-                    if (originalKey && translations[lang] && translations[lang][originalKey]) {
-                        link.textContent = translations[lang][originalKey];
+            navSelectors.forEach(selector => {
+                document.querySelectorAll(selector).forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href) {
+                        // Extract filename from href
+                        const filename = href.split('/').pop();
+                        const originalKey = linkMapping[filename];
+
+                        if (originalKey && translations[lang] && translations[lang][originalKey]) {
+                            link.textContent = translations[lang][originalKey];
+                        }
                     }
-                }
+                });
             });
         }
 

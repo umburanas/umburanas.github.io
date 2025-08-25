@@ -20,24 +20,68 @@
 {"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Projeto Umburanas"},"description":"Evolução fotográfica da segunda área agroflorestal (20x30m) do projeto Umburanas, desde dezembro 2023 até setembro 2024.","headline":"SAF02 - Expansão Principal","url":"http://0.0.0.0:4000/evolucao/saf02.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Umburanas" /></head>
-<body><header class="site-header" role="banner">
+<body>
 
-    <div class="wrapper"><a class="site-title" rel="author" href="/%20/">Umburanas</a><nav class="site-nav">
-            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-            <label for="nav-trigger">
-                <span class="menu-icon">
-                    <svg viewBox="0 0 18 15" width="18px" height="15px">
-                        <path
-                            d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.484C18,14.304,17.335,14.969,16.516,14.969H1.484 C0.665,14.969,0,14.304,0,13.484l0,0C0,12.665,0.665,12,1.484,12h15.032C17.335,12,18,12.665,18,13.484L18,13.484z" />
-                    </svg>
-                </span>
-            </label>
+    <div class="site-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a class="sidebar-title" href="/%20/">
+                    Umburanas
+                </a>
+                <button class="sidebar-toggle" id="sidebar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
 
-            <div class="trigger"><a class="page-link" href="/">Início</a><a class="page-link" href="/historia.html">História</a><a class="page-link" href="/evolucao.html">Evolução</a><a class="page-link" href="/consorcios.html">Consórcios</a><a class="page-link" href="/recursos.html">Recursos</a><a class="page-link" href="/sobre.html">Sobre</a><a class="page-link" href="/contato.html">Contato</a><div class="language-selector">
-    <button class="flag-btn" data-lang="pt" title="Português">🇧🇷</button>
-    <button class="flag-btn" data-lang="es" title="Español">🇪🇸</button>
-    <button class="flag-btn" data-lang="en" title="English">🇬🇧</button>
-    <button class="flag-btn" data-lang="de" title="Deutsch">🇩🇪</button>
+            <div class="sidebar-content">
+                <ul class="sidebar-nav"><li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link "
+                            href="/">
+                            Início
+                        </a>
+                    </li><li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link "
+                            href="/historia.html">
+                            História
+                        </a>
+                    </li><li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link "
+                            href="/evolucao.html">
+                            Evolução
+                        </a>
+                    </li><li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link "
+                            href="/consorcios.html">
+                            Consórcios
+                        </a>
+                    </li><li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link "
+                            href="/recursos.html">
+                            Recursos
+                        </a>
+                    </li><li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link "
+                            href="/sobre.html">
+                            Sobre
+                        </a>
+                    </li><li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link "
+                            href="/contato.html">
+                            Contato
+                        </a>
+                    </li></ul>
+
+                <div class="sidebar-footer"><div class="language-selector">
+    <div class="language-title">Idioma / Language</div>
+    <div class="language-flags">
+        <button class="flag-btn" data-lang="pt" title="Português">🇧🇷</button>
+        <button class="flag-btn" data-lang="es" title="Español">🇪🇸</button>
+        <button class="flag-btn" data-lang="en" title="English">🇬🇧</button>
+        <button class="flag-btn" data-lang="de" title="Deutsch">🇩🇪</button>
+    </div>
 </div>
 
 <script>
@@ -123,18 +167,22 @@
                 'contato.html': 'Contato'
             };
 
-            // Update navigation menu
-            document.querySelectorAll('.site-nav .page-link').forEach(link => {
-                const href = link.getAttribute('href');
-                if (href) {
-                    // Extract filename from href
-                    const filename = href.split('/').pop();
-                    const originalKey = linkMapping[filename];
+            // Update navigation menu (both sidebar and top nav if present)
+            const navSelectors = ['.sidebar-nav-link', '.site-nav .page-link'];
 
-                    if (originalKey && translations[lang] && translations[lang][originalKey]) {
-                        link.textContent = translations[lang][originalKey];
+            navSelectors.forEach(selector => {
+                document.querySelectorAll(selector).forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href) {
+                        // Extract filename from href
+                        const filename = href.split('/').pop();
+                        const originalKey = linkMapping[filename];
+
+                        if (originalKey && translations[lang] && translations[lang][originalKey]) {
+                            link.textContent = translations[lang][originalKey];
+                        }
                     }
-                }
+                });
             });
         }
 
@@ -144,11 +192,27 @@
         }
     });
 </script></div>
-        </nav></div>
+            </div>
+        </nav>
 
-</header><main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <h1 id="saf02---expansão-principal">SAF02 - Expansão Principal</h1>
+        <!-- Main Content Area -->
+        <div class="main-content" id="main-content">
+            <!-- Mobile Header (only visible on mobile) -->
+            <header class="mobile-header">
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a class="mobile-title" href="/%20/">
+                    Umburanas
+                </a>
+            </header>
+
+            <!-- Page Content -->
+            <main class="page-content" aria-label="Content">
+                <div class="wrapper">
+                    <h1 id="saf02---expansão-principal">SAF02 - Expansão Principal</h1>
 
 <table>
   <tbody>
@@ -223,8 +287,8 @@
     </a>
 </p>
 
-      </div>
-    </main><footer class="site-footer h-card">
+                </div>
+            </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">
@@ -248,6 +312,63 @@
   </div>
 
 </footer>
+</div>
+    </div>
+
+    <!-- Overlay for mobile -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <script>
+        // Sidebar toggle functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebar-overlay');
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const sidebarToggle = document.getElementById('sidebar-toggle');
+
+            function toggleSidebar() {
+                sidebar.classList.toggle('active');
+                overlay.classList.toggle('active');
+                document.body.classList.toggle('sidebar-open');
+            }
+
+            function closeSidebar() {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.classList.remove('sidebar-open');
+            }
+
+            // Mobile menu button
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', toggleSidebar);
+            }
+
+            // Sidebar toggle button
+            if (sidebarToggle) {
+                sidebarToggle.addEventListener('click', toggleSidebar);
+            }
+
+            // Overlay click to close
+            if (overlay) {
+                overlay.addEventListener('click', closeSidebar);
+            }
+
+            // Close sidebar when clicking on main content on mobile
+            document.getElementById('main-content').addEventListener('click', function () {
+                if (window.innerWidth <= 768 && sidebar.classList.contains('active')) {
+                    closeSidebar();
+                }
+            });
+
+            // Handle window resize
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768) {
+                    closeSidebar();
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
