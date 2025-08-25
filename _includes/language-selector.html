@@ -91,22 +91,19 @@
                 'contato.html': 'Contato'
             };
 
-            // Update navigation menu (both sidebar and top nav if present)
-            const navSelectors = ['.sidebar-nav-link', '.site-nav .page-link'];
+            // Update navigation menu (modern sidebar)
+            document.querySelectorAll('.menu-link .menu-text').forEach(menuText => {
+                const link = menuText.closest('.menu-link');
+                const href = link.getAttribute('href');
+                if (href) {
+                    // Extract filename from href
+                    const filename = href.split('/').pop();
+                    const originalKey = linkMapping[filename];
 
-            navSelectors.forEach(selector => {
-                document.querySelectorAll(selector).forEach(link => {
-                    const href = link.getAttribute('href');
-                    if (href) {
-                        // Extract filename from href
-                        const filename = href.split('/').pop();
-                        const originalKey = linkMapping[filename];
-
-                        if (originalKey && translations[lang] && translations[lang][originalKey]) {
-                            link.textContent = translations[lang][originalKey];
-                        }
+                    if (originalKey && translations[lang] && translations[lang][originalKey]) {
+                        menuText.textContent = translations[lang][originalKey];
                     }
-                });
+                }
             });
         }
 

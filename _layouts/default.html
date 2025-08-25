@@ -4,120 +4,109 @@
 {%- include head.html -%}
 
 <body>
-
-    <div class="site-container">
-        <!-- Sidebar Navigation -->
-        <nav class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <a class="sidebar-title" href="{{ " /" | relative_url }}">
-                    {{ site.title | escape }}
+    <!-- Modern Sidebar Layout -->
+    <div class="app-container">
+        <!-- Independent Sidebar -->
+        <nav class="modern-sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <a href="{{ " /" | relative_url }}" class="brand-link">
+                    <h2 class="brand-title">{{ site.title | escape }}</h2>
                 </a>
-                <button class="sidebar-toggle" id="sidebar-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
             </div>
 
-            <div class="sidebar-content">
-                <ul class="sidebar-nav">
+            <div class="sidebar-menu">
+                <ul class="menu-list">
                     {%- assign default_paths = site.pages | map: "path" -%}
                     {%- assign page_paths = site.header_pages | default: default_paths -%}
                     {%- for path in page_paths -%}
                     {%- assign my_page = site.pages | where: "path", path | first -%}
                     {%- if my_page.title -%}
                     {%- assign nav_title = site.navigation[path] | default: my_page.title -%}
-                    <li class="sidebar-nav-item">
-                        <a class="sidebar-nav-link {% if page.url == my_page.url %}active{% endif %}"
+                    <li class="menu-item">
+                        <a class="menu-link {% if page.url == my_page.url %}active{% endif %}"
                             href="{{ my_page.url | relative_url }}">
-                            {{ nav_title | escape }}
+                            <span class="menu-text">{{ nav_title | escape }}</span>
                         </a>
                     </li>
                     {%- endif -%}
                     {%- endfor -%}
                 </ul>
+            </div>
 
-                <div class="sidebar-footer">
-                    {%- include language-selector.html -%}
-                </div>
+            <div class="sidebar-footer">
+                {%- include language-selector.html -%}
             </div>
         </nav>
 
         <!-- Main Content Area -->
-        <div class="main-content" id="main-content">
-            <!-- Mobile Header (only visible on mobile) -->
-            <header class="mobile-header">
-                <button class="mobile-menu-btn" id="mobile-menu-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <a class="mobile-title" href="{{ " /" | relative_url }}">
-                    {{ site.title | escape }}
-                </a>
-            </header>
-
-            <!-- Page Content -->
-            <main class="page-content" aria-label="Content">
-                <div class="wrapper">
+        <div class="main-area">
+            <!-- Content -->
+            <main class="content-wrapper">
+                <div class="content-inner">
                     {{ content }}
                 </div>
             </main>
 
-            {%- include footer.html -%}
+            <!-- Footer -->
+            <footer class="content-footer">
+                {%- include footer.html -%}
+            </footer>
         </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-toggle" id="mobile-toggle">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <!-- Mobile Overlay -->
+        <div class="mobile-overlay" id="mobile-overlay"></div>
     </div>
 
-    <!-- Overlay for mobile -->
-    <div class="sidebar-overlay" id="sidebar-overlay"></div>
-
     <script>
-        // Sidebar toggle functionality
+        // Modern sidebar functionality
         document.addEventListener('DOMContentLoaded', function () {
             const sidebar = document.getElementById('sidebar');
-            const overlay = document.getElementById('sidebar-overlay');
-            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-            const sidebarToggle = document.getElementById('sidebar-toggle');
+            const mobileToggle = document.getElementById('mobile-toggle');
+            const mobileOverlay = document.getElementById('mobile-overlay');
 
-            function toggleSidebar() {
-                sidebar.classList.toggle('active');
-                overlay.classList.toggle('active');
-                document.body.classList.toggle('sidebar-open');
+            function toggleMobileSidebar() {
+                sidebar.classList.toggle('mobile-open');
+                mobileOverlay.classList.toggle('active');
+                document.body.classList.toggle('sidebar-mobile-open');
             }
 
-            function closeSidebar() {
-                sidebar.classList.remove('active');
-                overlay.classList.remove('active');
-                document.body.classList.remove('sidebar-open');
+            function closeMobileSidebar() {
+                sidebar.classList.remove('mobile-open');
+                mobileOverlay.classList.remove('active');
+                document.body.classList.remove('sidebar-mobile-open');
             }
 
-            // Mobile menu button
-            if (mobileMenuBtn) {
-                mobileMenuBtn.addEventListener('click', toggleSidebar);
-            }
-
-            // Sidebar toggle button
-            if (sidebarToggle) {
-                sidebarToggle.addEventListener('click', toggleSidebar);
+            // Mobile toggle button
+            if (mobileToggle) {
+                mobileToggle.addEventListener('click', toggleMobileSidebar);
             }
 
             // Overlay click to close
-            if (overlay) {
-                overlay.addEventListener('click', closeSidebar);
+            if (mobileOverlay) {
+                mobileOverlay.addEventListener('click', closeMobileSidebar);
             }
 
-            // Close sidebar when clicking on main content on mobile
-            document.getElementById('main-content').addEventListener('click', function () {
-                if (window.innerWidth <= 768 && sidebar.classList.contains('active')) {
-                    closeSidebar();
+            // Close on window resize if mobile
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768) {
+                    closeMobileSidebar();
                 }
             });
 
-            // Handle window resize
-            window.addEventListener('resize', function () {
-                if (window.innerWidth > 768) {
-                    closeSidebar();
-                }
+            // Close sidebar when clicking menu links on mobile
+            document.querySelectorAll('.menu-link').forEach(link => {
+                link.addEventListener('click', function () {
+                    if (window.innerWidth <= 768) {
+                        closeMobileSidebar();
+                    }
+                });
             });
         });
     </script>
