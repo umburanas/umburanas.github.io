@@ -6,7 +6,7 @@ description: Planejamento e implementação de consórcios agroflorestais no pro
 
 # Consórcios Agroflorestais
 
-[← Voltar ao início](index.md) | [História →](historia.md) | [Evolução →](evolucao.md)
+[← Voltar ao início](/) | [História →](/historia) | [Evolução →](/evolucao)
 
 Neste espaço, você encontrará informações sobre consórcios agroflorestais utilizados ou propostos em nossas áreas. Os diagramas mostram tanto o planejamento inicial quanto a implementação real, permitindo visualizar adaptações necessárias durante o processo.
 

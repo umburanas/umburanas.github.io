@@ -1,9 +1,18 @@
-# SAF 02
+---
+layout: default
+title: SAF02 - Expansão Principal
+description: Evolução fotográfica da segunda área agroflorestal (20x30m) do projeto Umburanas, desde dezembro 2023 até setembro 2024.
+---
 
-## Informações
+# SAF02 - Expansão Principal
 
-- Início: Dezembro 2023
-- Tamanho: 20x30 metros
+[← SAF01](saf01.html) | [Voltar para Evolução](../evolucao.html)
+
+## 📋 Informações Gerais
+- **Início**: Dezembro 2023
+- **Tamanho**: 20x30 metros (600m²)
+- **Status**: Em desenvolvimento
+- **Principais culturas**: Expansão das culturas do SAF01
 
 ## Fotos
 

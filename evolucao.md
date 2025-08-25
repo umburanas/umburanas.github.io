@@ -6,7 +6,7 @@ description: Acompanhe a evolução temporal das diferentes áreas do projeto ag
 
 # Evolução das Áreas
 
-[← Voltar ao início](index.md) | [História →](historia.md) | [Consórcios →](consorcios.md)
+[← Voltar ao início](/) | [História →](/historia) | [Consórcios →](/consorcios)
 
 Acompanhe a evolução temporal das diferentes áreas do projeto Umburanas. Cada área representa uma fase de aprendizado e adaptação às condições locais da Caatinga.
 
@@ -14,9 +14,9 @@ Acompanhe a evolução temporal das diferentes áreas do projeto Umburanas. Cada
 
 | Área | Tamanho | Início | Status Atual | Principais Culturas |
 |------|---------|--------|--------------|-------------------|
-| [SAF01](evolucao/saf01.md) | 6x10m | Mar/2023 | Consolidado | Palma forrageira, Mandioca, Leucena |
-| [SAF02](evolucao/saf02.md) | 30x20m | Dez/2023 | Em expansão | Mandioca, Sisal, Piteira |
-| [SAF03](evolucao/saf03.md) | Variável | Jan/2024 | Recuperação | Horta (afetada por gafanhotos) |
+| [SAF01](/evolucao/saf01) | 6x10m | Mar/2023 | Consolidado | Palma forrageira, Mandioca, Leucena |
+| [SAF02](/evolucao/saf02) | 30x20m | Dez/2023 | Em expansão | Mandioca, Sisal, Piteira |
+| [SAF03](/evolucao/saf03) | Variável | Jan/2024 | Recuperação | Horta (afetada por gafanhotos) |
 | Novas áreas | Múltiplas | 2024 | Implementação | Palma forrageira, Sisal |
 
 ---
@@ -30,7 +30,7 @@ Nossa primeira área experimental, onde enfrentamos os maiores desafios iniciais
 - Problemas com formigas
 - Período de enchentes seguido de seca
 
-[📸 Ver evolução fotográfica do SAF01 →](evolucao/saf01.md)
+[📸 Ver evolução fotográfica do SAF01 →](/evolucao/saf01)
 
 ### Principais Aprendizados:
 - ⏰ **Timing é crucial** para o sucesso dos plantios
@@ -46,7 +46,7 @@ Nossa primeira área experimental, onde enfrentamos os maiores desafios iniciais
 - Melhor planejamento temporal
 - Implementação de corredores com sisal e piteira
 
-[📸 Ver evolução fotográfica do SAF02 →](evolucao/saf02.md)
+[📸 Ver evolução fotográfica do SAF02 →](/evolucao/saf02)
 
 ### Conquistas:
 - ✅ **280 manivas de mandioca** plantadas
@@ -62,7 +62,7 @@ Nossa primeira área experimental, onde enfrentamos os maiores desafios iniciais
 - Ataque severo de gafanhotos (janeiro a maio 2024)
 - Necessidade de replantio e adaptação de estratégias
 
-[📸 Ver detalhes do SAF03 →](evolucao/saf03.md)
+[📸 Ver detalhes do SAF03 →](/evolucao/saf03)
 
 ### Lições Aprendidas:
 - 🔄 **Resiliência** é fundamental na agrofloresta
@@ -126,9 +126,9 @@ Expansão baseada na experiência acumulada:
 
 ## 🔗 Links Relacionados
 
-- [📖 História completa do projeto](historia.md)
-- [🌿 Consórcios implementados](consorcios.md)
-- [📊 Tabelas de espécies](tabelas/matrizes_umburanas.md)
+- [📖 História completa do projeto](/historia)
+- [🌿 Consórcios implementados](/consorcios)
+- [📊 Tabelas de espécies](/tabelas/matrizes_umburanas)
 - [🗺️ Mapa interativo das áreas](maps/interactive/index.html)
 
 ---

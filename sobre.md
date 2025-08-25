@@ -6,7 +6,7 @@ description: Como o site foi construído, tecnologias utilizadas e ferramentas d
 
 # Sobre Este Site
 
-[← Voltar ao início](index.md) | [Contato →](contato.md)
+[← Voltar ao início](/) | [Contato →](/contato)
 
 Este site foi criado com o intuito de documentar a evolução do projeto agroflorestal em Umburanas, compartilhar informações e fornecer um meio de contato de forma simples e gratuita. Acreditando que esta ferramenta pode ser de interesse para outras pessoas, decidimos documentar os principais processos que usamos, visando possivelmente reduzir ou acelerar o trabalho de outros.
 

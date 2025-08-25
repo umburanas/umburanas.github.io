@@ -1,0 +1,43 @@
+/* Customização para tornar as células da tabela de navegação transparentes */
+table {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+table tr {
+    background-color: transparent !important;
+}
+
+table tr:nth-child(even) {
+    background-color: transparent !important;
+}
+
+table th {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+table td {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+/* Estilo para links de navegação */
+a[href*="evolucao"],
+a[href*="saf"] {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a[href*="evolucao"]:hover,
+a[href*="saf"]:hover {
+    background-color: rgba(42, 122, 226, 0.1);
+    border-color: rgba(42, 122, 226, 0.3);
+    text-decoration: none;
+}

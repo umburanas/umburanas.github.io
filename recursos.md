@@ -6,7 +6,7 @@ description: Recursos, ferramentas, scripts e materiais complementares desenvolv
 
 # Recursos e Ferramentas
 
-[← Voltar ao início](index.md) | [Sobre →](sobre.md) | [Contato →](contato.md)
+[← Voltar ao início](/) | [Sobre →](/sobre) | [Contato →](/contato)
 
 Esta página reúne recursos, ferramentas e materiais complementares desenvolvidos e utilizados no projeto Umburanas. Nosso objetivo é compartilhar conhecimento e facilitar o trabalho de outros projetos agroflorestais.
 
@@ -34,14 +34,14 @@ Automatização do processo de criação de miniaturas das imagens para otimizar
 ### Estratificação da Caatinga
 Informações sobre espécies nativas e sua organização em estratos.
 
-- **Arquivo**: [Matrizes para Caatinga](tabelas/algumas_matrizes_para_utilizar_na_caatinga.md)
+- **Arquivo**: [Matrizes para Caatinga](/tabelas/algumas_matrizes_para_utilizar_na_caatinga)
 - **Conteúdo**: Espécies organizadas por estratos (emergente, dossel, sub-bosque, etc.)
 - **Aplicação**: Planejamento de consórcios agroflorestais
 
 ### Matrizes Utilizadas no Projeto
 Registro das espécies efetivamente utilizadas em Umburanas.
 
-- **Arquivo**: [Matrizes Umburanas](tabelas/matrizes_umburanas.md)
+- **Arquivo**: [Matrizes Umburanas](/tabelas/matrizes_umburanas)
 - **Conteúdo**: Espécies testadas, adaptação, resultados
 - **Utilidade**: Referência para projetos similares na Caatinga
 

@@ -6,7 +6,7 @@ description: Entre em contato com o projeto agroflorestal Umburanas para trocar 
 
 # Contato
 
-[← Voltar ao início](index.md) | [Recursos →](recursos.md) | [Sobre →](sobre.md)
+[← Voltar ao início](/) | [Recursos →](/recursos) | [Sobre →](/sobre)
 
 Entre em contato conosco para trocar experiências, fazer perguntas, sugerir melhorias ou colaborar com o projeto Umburanas.
 
@@ -166,8 +166,8 @@ Estamos sempre interessados em conhecer outros projetos agroflorestais, especial
 
 ## 🔗 Links Rápidos
 
-- [🏠 Página Inicial](index.md)
-- [📖 História do Projeto](historia.md)
-- [🌱 Evolução das Áreas](evolucao.md)
-- [🛠️ Recursos e Ferramentas](recursos.md)
+- [🏠 Página Inicial](/)
+- [📖 História do Projeto](/historia)
+- [🌱 Evolução das Áreas](/evolucao)
+- [🛠️ Recursos e Ferramentas](/recursos)
 - [💻 GitHub do Projeto](https://github.com/umburanas/umburanas.github.io)

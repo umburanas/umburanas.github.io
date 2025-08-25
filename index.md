@@ -31,26 +31,26 @@ Monte Branco - Região da Caatinga
 ## 🗂️ Navegação do Site
 
 ### 📖 História e Evolução
-- [**História Completa**](historia.md) - A jornada desde o início
-- [**Evolução das Áreas**](evolucao.md) - Acompanhe o desenvolvimento
-  - [SAF01 - Primeira Área](evolucao/saf01.md)
-  - [SAF02 - Expansão Principal](evolucao/saf02.md)
-  - [SAF03 - Área de Horta](evolucao/saf03.md)
+- [**História Completa**](historia) - A jornada desde o início
+- [**Evolução das Áreas**](evolucao) - Acompanhe o desenvolvimento
+  - [SAF01 - Primeira Área](/evolucao/saf01)
+  - [SAF02 - Expansão Principal](/evolucao/saf02)
+  - [SAF03 - Área de Horta](/evolucao/saf03)
 
 ### 🌿 Técnicas e Recursos
-- [**Consórcios Agroflorestais**](consorcios.md) - Planejamento e implementação
-- [**Tabelas de Estratificação**](tabelas/algumas_matrizes_para_utilizar_na_caatinga.md) - Espécies da Caatinga
-- [**Matrizes Utilizadas**](tabelas/matrizes_umburanas.md) - Nossas espécies
+- [**Consórcios Agroflorestais**](consorcios) - Planejamento e implementação
+- [**Tabelas de Estratificação**](/tabelas/algumas_matrizes_para_utilizar_na_caatinga) - Espécies da Caatinga
+- [**Matrizes Utilizadas**](/tabelas/matrizes_umburanas) - Nossas espécies
 - [**Automação**](automacao.md) - Ferramentas e scripts
 
 ### 🛠️ Recursos e Ferramentas
-- [**Outros Recursos**](recursos.md) - Materiais complementares
+- [**Outros Recursos**](recursos) - Materiais complementares
 - [**Scripts e Automação**](scripts/cria_thumbnails.md) - Ferramentas desenvolvidas
 - [**Mapa Interativo**](maps/interactive/index.html) - Visualização 3D das áreas
 
 ### ℹ️ Informações
-- [**Sobre Este Site**](sobre.md) - Como foi construído
-- [**Contato**](contato.md) - Entre em contato conosco
+- [**Sobre Este Site**](sobre) - Como foi construído
+- [**Contato**](contato) - Entre em contato conosco
 
 ---
 
