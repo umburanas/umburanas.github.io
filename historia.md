@@ -6,7 +6,6 @@ description: A jornada do projeto agroflorestal Umburanas desde 2023, desafios e
 
 # História
 
-[← Voltar ao início](/) | [Próximo: Evolução das Áreas →](/evolucao)
 
 O projeto agroflorestal em Umburanas teve início no começo de 2023. Nosso projeto é um pequeno núcleo dentro de uma área maior, que conta com pouca experiência, muita vontade e recursos limitados. Por isso, priorizamos a utilização dos recursos localmente disponíveis, procuramos documentar as experiências para acelerar nosso aprendizado, compartilhá-las para retribuir um pouco do que aprendemos com tantos outros trabalhadores que tivemos a alegria de encontrar pelo caminho, e esperamos crescer juntos como parte deste sistema.
 

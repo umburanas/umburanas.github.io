@@ -6,7 +6,6 @@ description: Recursos, ferramentas, scripts e materiais complementares desenvolv
 
 # Recursos e Ferramentas
 
-[← Voltar ao início](/) | [Sobre →](/sobre) | [Contato →](/contato)
 
 Esta página reúne recursos, ferramentas e materiais complementares desenvolvidos e utilizados no projeto Umburanas. Nosso objetivo é compartilhar conhecimento e facilitar o trabalho de outros projetos agroflorestais.
 

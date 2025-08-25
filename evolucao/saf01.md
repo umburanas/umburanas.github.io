@@ -6,7 +6,6 @@ description: Evolução fotográfica da primeira área agroflorestal (6x10m) do 
 
 # SAF01 - Primeira Área Experimental
 
-[← Voltar para Evolução](../evolucao.html) | [SAF02 →](saf02.html)
 
 ## 📋 Informações Gerais
 - **Início**: Março 2023
@@ -84,10 +83,3 @@ description: Evolução fotográfica da primeira área agroflorestal (6x10m) do 
 - Estacas de cana de açúcar e sementes de Muvuca
 
 ---
-
-## 🔗 Navegação
-
-- [← Voltar para Evolução das Áreas](../evolucao.html)
-- [SAF02 - Expansão Principal →](saf02.html)
-- [Consórcios Planejados](../consorcios.html)
-- [História do Projeto](../historia.html)

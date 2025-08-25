@@ -6,7 +6,6 @@ description: Acompanhe a evolução temporal das diferentes áreas do projeto ag
 
 # Evolução das Áreas
 
-[← Voltar ao início](/) | [História →](/historia) | [Consórcios →](/consorcios)
 
 Acompanhe a evolução temporal das diferentes áreas do projeto Umburanas. Cada área representa uma fase de aprendizado e adaptação às condições locais da Caatinga.
 

@@ -6,7 +6,6 @@ description: Entre em contato com o projeto agroflorestal Umburanas para trocar 
 
 # Contato
 
-[← Voltar ao início](/) | [Recursos →](/recursos) | [Sobre →](/sobre)
 
 Entre em contato conosco para trocar experiências, fazer perguntas, sugerir melhorias ou colaborar com o projeto Umburanas.
 
