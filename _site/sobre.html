@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Sobre o Site Umburanas | Umburanas</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Sobre o Site Umburanas" />
+<meta name="author" content="Projeto Umburanas" />
+<meta property="og:locale" content="pt_BR" />
+<meta name="description" content="Como o site foi construído, tecnologias utilizadas e ferramentas desenvolvidas para documentar o projeto agroflorestal Umburanas." />
+<meta property="og:description" content="Como o site foi construído, tecnologias utilizadas e ferramentas desenvolvidas para documentar o projeto agroflorestal Umburanas." />
+<link rel="canonical" href="http://0.0.0.0:4000/sobre.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/sobre.html" />
+<meta property="og:site_name" content="Umburanas" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Sobre o Site Umburanas" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Projeto Umburanas"},"description":"Como o site foi construído, tecnologias utilizadas e ferramentas desenvolvidas para documentar o projeto agroflorestal Umburanas.","headline":"Sobre o Site Umburanas","url":"http://0.0.0.0:4000/sobre.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Umburanas" /></head>
+<body><header class="site-header" role="banner">
+
+    <div class="wrapper"><a class="site-title" rel="author" href="/%20/">Umburanas</a><nav class="site-nav">
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger">
+                <span class="menu-icon">
+                    <svg viewBox="0 0 18 15" width="18px" height="15px">
+                        <path
+                            d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.484C18,14.304,17.335,14.969,16.516,14.969H1.484 C0.665,14.969,0,14.304,0,13.484l0,0C0,12.665,0.665,12,1.484,12h15.032C17.335,12,18,12.665,18,13.484L18,13.484z" />
+                    </svg>
+                </span>
+            </label>
+
+            <div class="trigger"><a class="page-link" href="/">Início</a><a class="page-link" href="/historia.html">História</a><a class="page-link" href="/evolucao.html">Evolução</a><a class="page-link" href="/consorcios.html">Consórcios</a><a class="page-link" href="/recursos.html">Recursos</a><a class="page-link" href="/sobre.html">Sobre</a><a class="page-link" href="/contato.html">Contato</a><div class="language-selector">
+    <button class="flag-btn" data-lang="pt" title="Português">🇧🇷</button>
+    <button class="flag-btn" data-lang="es" title="Español">🇪🇸</button>
+    <button class="flag-btn" data-lang="en" title="English">🇬🇧</button>
+    <button class="flag-btn" data-lang="de" title="Deutsch">🇩🇪</button>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get current language from localStorage or default to 'pt'
+        let currentLanguage = localStorage.getItem('selectedLanguage') || 'pt';
+
+        // Update active flag button
+        updateActiveFlag(currentLanguage);
+
+        // Handle flag button clicks
+        document.querySelectorAll('.flag-btn').forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                const lang = this.dataset.lang;
+
+                // Update current language
+                currentLanguage = lang;
+                localStorage.setItem('selectedLanguage', lang);
+                updateActiveFlag(lang);
+
+                // Translate page
+                translatePage(lang);
+            });
+        });
+
+        function updateActiveFlag(lang) {
+            // Remove active class from all buttons
+            document.querySelectorAll('.flag-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Add active class to current language button
+            const activeBtn = document.querySelector(`[data-lang="${lang}"]`);
+            if (activeBtn) {
+                activeBtn.classList.add('active');
+            }
+        }
+
+        function translatePage(lang) {
+            const translations = {
+                pt: {
+                    'História': 'História',
+                    'Evolução': 'Evolução',
+                    'Consórcios': 'Consórcios',
+                    'Recursos': 'Recursos',
+                    'Sobre': 'Sobre',
+                    'Contato': 'Contato'
+                },
+                es: {
+                    'História': 'Historia',
+                    'Evolução': 'Evolución',
+                    'Consórcios': 'Consorcios',
+                    'Recursos': 'Recursos',
+                    'Sobre': 'Acerca de',
+                    'Contato': 'Contacto'
+                },
+                en: {
+                    'História': 'History',
+                    'Evolução': 'Evolution',
+                    'Consórcios': 'Consortiums',
+                    'Recursos': 'Resources',
+                    'Sobre': 'About',
+                    'Contato': 'Contact'
+                },
+                de: {
+                    'História': 'Geschichte',
+                    'Evolução': 'Entwicklung',
+                    'Consórcios': 'Konsortien',
+                    'Recursos': 'Ressourcen',
+                    'Sobre': 'Über uns',
+                    'Contato': 'Kontakt'
+                }
+            };
+
+            // Update navigation menu
+            document.querySelectorAll('.site-nav .page-link').forEach(link => {
+                const originalText = link.textContent.trim();
+                if (translations[lang] && translations[lang][originalText]) {
+                    link.textContent = translations[lang][originalText];
+                }
+            });
+        }
+
+        // Apply saved language on page load
+        if (currentLanguage !== 'pt') {
+            translatePage(currentLanguage);
+        }
+    });
+</script></div>
+        </nav></div>
+
+</header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="sobre-este-site">Sobre Este Site</h1>
+
+<p>Este site foi criado com o intuito de documentar a evolução do projeto agroflorestal em Umburanas, compartilhar informações e fornecer um meio de contato de forma simples e gratuita. Acreditando que esta ferramenta pode ser de interesse para outras pessoas, decidimos documentar os principais processos que usamos, visando possivelmente reduzir ou acelerar o trabalho de outros.</p>
+
+<h2 id="️-tecnologias-utilizadas">🛠️ Tecnologias Utilizadas</h2>
+
+<ul>
+  <li><strong>GitHub</strong>: O site é hospedado no GitHub, permitindo armazenamento sem custo e a possibilidade de gerenciamento de versões, garantindo que nada seja perdido.</li>
+  <li><strong>Markdown</strong>: Escrevemos o site em um formato simples, que não requer do usuário um conhecimento técnico avançado para editar ou criar novas páginas.</li>
+  <li><strong>Ferramenta para desenhar consórcios</strong>: <a href="https://app.diagrams.net/">draw.io</a></li>
+  <li><strong>Scripts</strong>: Este espaço deve prover alguns scripts para facilitar as tarefas repetitivas. É provável que o código não funcione exatamente no seu sistema (devido ao uso de determinado software ou sistema operacional). Caso você consiga adaptá-lo para o seu uso, por favor, compartilhe a adaptação com o seu sistema.
+    <ul>
+      <li><strong>Geração de thumbnails</strong>: Neste site, utilizamos thumbnails (cópias reduzidas das figuras) para acelerar a leitura da página. O processo de adaptar cada foto para um determinado tamanho e formato é tedioso. Este <a href="scripts/cria_thumbnails.md">script</a> automatiza esse processo.</li>
+    </ul>
+  </li>
+</ul>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Umburanas</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Projeto Umburanas</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/umburanas"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">umburanas</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Documentação e evolução de um projeto agroflorestal sintrópico em Monte Branco. Compartilhando experiências, técnicas e aprendizados sobre sistemas agroflorestais sustentáveis na região da Caatinga.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
