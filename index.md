@@ -41,11 +41,11 @@ Monte Branco - Região da Caatinga
 - [**Consórcios Agroflorestais**](consorcios) - Planejamento e implementação
 - [**Tabelas de Estratificação**](/tabelas/algumas_matrizes_para_utilizar_na_caatinga) - Espécies da Caatinga
 - [**Matrizes Utilizadas**](/tabelas/matrizes_umburanas) - Nossas espécies
-- [**Automação**](automacao.md) - Ferramentas e scripts
+- [**Automação**](automacao) - Ferramentas e scripts
 
 ### 🛠️ Recursos e Ferramentas
 - [**Outros Recursos**](recursos) - Materiais complementares
-- [**Scripts e Automação**](scripts/cria_thumbnails.md) - Ferramentas desenvolvidas
+- [**Scripts e Automação**](scripts/cria_thumbnails) - Ferramentas desenvolvidas
 - [**Mapa Interativo**](maps/interactive/index.html) - Visualização 3D das áreas
 
 ### ℹ️ Informações

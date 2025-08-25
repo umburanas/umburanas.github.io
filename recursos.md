@@ -16,7 +16,7 @@ Esta página reúne recursos, ferramentas e materiais complementares desenvolvid
 ### Geração de Thumbnails
 Automatização do processo de criação de miniaturas das imagens para otimizar o carregamento das páginas.
 
-- **Arquivo**: [scripts/cria_thumbnails.md](scripts/cria_thumbnails.md)
+- **Arquivo**: [scripts/cria_thumbnails.md](scripts/cria_thumbnails)
 - **Função**: Redimensiona automaticamente imagens para thumbnails
 - **Benefício**: Acelera carregamento das páginas web
 - **Nota**: Pode necessitar adaptação para diferentes sistemas operacionais
@@ -127,7 +127,7 @@ figuras/
 ### Adaptações e Melhorias
 Se você adaptar algum dos nossos scripts ou recursos para seu sistema:
 1. Documente as modificações necessárias
-2. Compartilhe conosco via [contato](contato.md)
+2. Compartilhe conosco via [contato](contato)
 3. Ajude outros projetos com sua experiência
 
 ### Compartilhamento de Experiências

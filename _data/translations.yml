@@ -1,4 +1,4 @@
-# Traduções para múltiplos idiomas
+# Configuração para português apenas
 pt:
   site_title: "Umburanas"
   site_description: "Sistema Agroflorestal Sintrópico em Monte Branco"
@@ -10,43 +10,3 @@ pt:
     resources: "Recursos"
     about: "Sobre"
     contact: "Contato"
-  language_selector: "Escolher idioma"
-
-es:
-  site_title: "Umburanas"
-  site_description: "Sistema Agroforestal Sintrópico en Monte Branco"
-  nav:
-    home: "Inicio"
-    history: "Historia"
-    evolution: "Evolución"
-    consortiums: "Consorcios"
-    resources: "Recursos"
-    about: "Acerca de"
-    contact: "Contacto"
-  language_selector: "Elegir idioma"
-
-en:
-  site_title: "Umburanas"
-  site_description: "Syntropic Agroforestry System in Monte Branco"
-  nav:
-    home: "Home"
-    history: "History"
-    evolution: "Evolution"
-    consortiums: "Consortiums"
-    resources: "Resources"
-    about: "About"
-    contact: "Contact"
-  language_selector: "Choose language"
-
-de:
-  site_title: "Umburanas"
-  site_description: "Syntropisches Agroforstsystem in Monte Branco"
-  nav:
-    home: "Startseite"
-    history: "Geschichte"
-    evolution: "Entwicklung"
-    consortiums: "Konsortien"
-    resources: "Ressourcen"
-    about: "Über uns"
-    contact: "Kontakt"
-  language_selector: "Sprache wählen"
