@@ -25,6 +25,8 @@
                 <a class="page-link" href="{{ my_page.url | relative_url }}">{{ nav_title | escape }}</a>
                 {%- endif -%}
                 {%- endfor -%}
+
+                {%- include language-selector.html -%}
             </div>
         </nav>
         {%- endif -%}

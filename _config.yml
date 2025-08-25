@@ -12,6 +12,12 @@ author: Projeto Umburanas
 keywords: agrofloresta, sistema agroflorestal, sintropia, caatinga, sustentabilidade, permacultura
 lang: pt-BR
 
+# Internationalization
+languages: ["pt", "es", "en", "de"]
+default_lang: "pt"
+exclude_from_localization: ["javascript", "images", "css", "figuras", "assets"]
+parallel_localization: true
+
 # Social media
 github_username: umburanas
 
