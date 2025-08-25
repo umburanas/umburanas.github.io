@@ -24,12 +24,23 @@ plugins:
 
 # Navigation
 header_pages:
+  - index.md
   - historia.md
   - evolucao.md
   - consorcios.md
   - recursos.md
   - sobre.md
   - contato.md
+
+# Custom navigation titles (short versions for menu)
+navigation:
+  index.md: "Início"
+  historia.md: "História"
+  evolucao.md: "Evolução"
+  consorcios.md: "Consórcios"
+  recursos.md: "Recursos"
+  sobre.md: "Sobre"
+  contato.md: "Contato"
 
 # Collections
 collections:
