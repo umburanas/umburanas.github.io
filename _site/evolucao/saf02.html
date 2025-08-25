@@ -113,11 +113,27 @@
                 }
             };
 
+            // Map of navigation links to their original Portuguese keys
+            const linkMapping = {
+                'historia.html': 'História',
+                'evolucao.html': 'Evolução',
+                'consorcios.html': 'Consórcios',
+                'recursos.html': 'Recursos',
+                'sobre.html': 'Sobre',
+                'contato.html': 'Contato'
+            };
+
             // Update navigation menu
             document.querySelectorAll('.site-nav .page-link').forEach(link => {
-                const originalText = link.textContent.trim();
-                if (translations[lang] && translations[lang][originalText]) {
-                    link.textContent = translations[lang][originalText];
+                const href = link.getAttribute('href');
+                if (href) {
+                    // Extract filename from href
+                    const filename = href.split('/').pop();
+                    const originalKey = linkMapping[filename];
+
+                    if (originalKey && translations[lang] && translations[lang][originalKey]) {
+                        link.textContent = translations[lang][originalKey];
+                    }
                 }
             });
         }
