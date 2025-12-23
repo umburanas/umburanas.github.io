@@ -1,20 +1,104 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 {%- include head.html -%}
+{%- include custom-head.html -%}
 
 <body>
+  <div class="app-container">
+    <!-- Mobile toggle button -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir/fechar menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
 
-    {%- include header.html -%}
+    <!-- Modern Sidebar Navigation -->
+    <aside class="modern-sidebar" id="modernSidebar" role="navigation" aria-label="Navegação principal">
+      <div class="sidebar-brand">
+        <a class="brand-link" href="{{ '/' | relative_url }}">
+          <h1 class="brand-title">{{ site.title | escape }}</h1>
+        </a>
+      </div>
 
-    <main class="page-content" aria-label="Content">
-        <div class="wrapper">
-            {{ content }}
+      <nav class="sidebar-menu">
+        <ul class="menu-list">
+          {%- assign default_paths = site.pages | map: 'path' -%}
+          {%- assign page_paths = site.header_pages | default: default_paths -%}
+          {%- for path in page_paths -%}
+            {%- assign my_page = site.pages | where: 'path', path | first -%}
+            {%- if my_page.title -%}
+              {%- assign nav_title = site.navigation[path] | default: my_page.title -%}
+              <li class="menu-item">
+                <a class="menu-link {% if page.url == my_page.url %}active{% endif %}" href="{{ my_page.url | relative_url }}">
+                  <span class="menu-text">{{ nav_title | escape }}</span>
+                </a>
+              </li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="language-selector">
+          <div class="language-title">Idiomas</div>
+          <div class="language-flags">
+            {%- for lang in site.languages -%}
+              {%- assign is_active = lang == site.default_lang -%}
+              <a class="flag-btn {% if is_active %}active{% endif %}" href="{{ page.url | relative_url }}" aria-label="Idioma {{ lang | upcase }}">
+                {%- case lang -%}
+                  {%- when 'pt' -%}<span class="flag-icon flag-icon-br"></span>
+                  {%- when 'en' -%}<span class="flag-icon flag-icon-gb"></span>
+                  {%- when 'es' -%}<span class="flag-icon flag-icon-es"></span>
+                  {%- when 'de' -%}<span class="flag-icon">🇩🇪</span>
+                  {%- else -%}<span class="flag-icon">🌐</span>
+                {%- endcase -%}
+              </a>
+            {%- endfor -%}
+          </div>
         </div>
-    </main>
+      </div>
+    </aside>
 
-    {%- include footer.html -%}
+    <div class="main-area">
+      {%- include header.html -%}
+      <main class="content-wrapper" aria-label="Content">
+        <div class="content-inner">
+          {{ content }}
+        </div>
+      </main>
+      <footer class="content-footer">
+        {%- include footer.html -%}
+      </footer>
+    </div>
+  </div>
 
+  <script>
+    (function() {
+      var sidebar = document.getElementById('modernSidebar');
+      var toggle = document.getElementById('mobileMenuToggle');
+      var overlay = document.getElementById('mobileOverlay');
+      function open() {
+        sidebar.classList.add('mobile-open');
+        document.body.classList.add('sidebar-mobile-open');
+        overlay.classList.add('active');
+      }
+      function close() {
+        sidebar.classList.remove('mobile-open');
+        document.body.classList.remove('sidebar-mobile-open');
+        overlay.classList.remove('active');
+      }
+      if (toggle) {
+        toggle.addEventListener('click', function() {
+          if (sidebar.classList.contains('mobile-open')) { close(); } else { open(); }
+        });
+      }
+      if (overlay) {
+        overlay.addEventListener('click', close);
+      }
+    })();
+  </script>
 </body>
 
 </html>
