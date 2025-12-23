@@ -7,15 +7,15 @@
 <body>
   <div class="app-container">
     <!-- Mobile toggle button -->
-    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir/fechar menu">
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-    </button>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir/fechar menu" aria-expanded="false" aria-controls="modernSidebar">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
     <div class="mobile-overlay" id="mobileOverlay"></div>
 
     <!-- Modern Sidebar Navigation -->
-    <aside class="modern-sidebar" id="modernSidebar" role="navigation" aria-label="Navegação principal">
+    <aside class="modern-sidebar" id="modernSidebar" role="navigation" aria-label="Navegação principal" aria-hidden="true">
       <div class="sidebar-brand">
         <a class="brand-link" href="{{ '/' | relative_url }}">
           <h1 class="brand-title">{{ site.title | escape }}</h1>
@@ -62,7 +62,18 @@
     </aside>
 
     <div class="main-area">
-      {%- include header.html -%}
+      {% if page.hero_title or page.hero_subtitle %}
+      <section class="hero">
+        <div class="hero-inner">
+          {% if page.hero_title %}<h1 class="hero-title">{{ page.hero_title }}</h1>{% endif %}
+          {% if page.hero_subtitle %}<p class="hero-subtitle">{{ page.hero_subtitle }}</p>{% endif %}
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="{{ '/evolucao' | relative_url }}">Ver evolução</a>
+            <a class="btn btn-secondary" href="{{ '/consorcios' | relative_url }}">Ver consórcios</a>
+          </div>
+        </div>
+      </section>
+      {% endif %}
       <main class="content-wrapper" aria-label="Content">
         <div class="content-inner">
           {{ content }}
@@ -75,30 +86,59 @@
   </div>
 
   <script>
-    (function() {
-      var sidebar = document.getElementById('modernSidebar');
-      var toggle = document.getElementById('mobileMenuToggle');
-      var overlay = document.getElementById('mobileOverlay');
-      function open() {
-        sidebar.classList.add('mobile-open');
-        document.body.classList.add('sidebar-mobile-open');
-        overlay.classList.add('active');
-      }
-      function close() {
-        sidebar.classList.remove('mobile-open');
-        document.body.classList.remove('sidebar-mobile-open');
-        overlay.classList.remove('active');
-      }
-      if (toggle) {
-        toggle.addEventListener('click', function() {
-          if (sidebar.classList.contains('mobile-open')) { close(); } else { open(); }
-        });
-      }
-      if (overlay) {
-        overlay.addEventListener('click', close);
-      }
-    })();
-  </script>
+      (function() {
+        var sidebar = document.getElementById('modernSidebar');
+        var toggle = document.getElementById('mobileMenuToggle');
+        var overlay = document.getElementById('mobileOverlay');
+        var firstLink = null;
+  
+        function setAria(isOpen) {
+          if (toggle) toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          if (sidebar) sidebar.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+        }
+  
+        function open() {
+          sidebar.classList.add('mobile-open');
+          document.body.classList.add('sidebar-mobile-open');
+          overlay.classList.add('active');
+          setAria(true);
+          // focus first link for accessibility
+          firstLink = sidebar.querySelector('.menu-link');
+          if (firstLink) firstLink.focus({ preventScroll: true });
+        }
+        function close() {
+          sidebar.classList.remove('mobile-open');
+          document.body.classList.remove('sidebar-mobile-open');
+          overlay.classList.remove('active');
+          setAria(false);
+          if (toggle) toggle.focus({ preventScroll: true });
+        }
+        if (toggle) {
+          toggle.addEventListener('click', function() {
+            if (sidebar.classList.contains('mobile-open')) { close(); } else { open(); }
+          });
+          // close on Escape
+          document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && sidebar.classList.contains('mobile-open')) {
+              close();
+            }
+          });
+        }
+        if (overlay) {
+          overlay.addEventListener('click', close);
+        }
+
+        // Lazy-load all images by default
+        try {
+          var imgs = document.querySelectorAll('img');
+          imgs.forEach(function(img) {
+            if (!img.hasAttribute('loading')) {
+              img.setAttribute('loading', 'lazy');
+            }
+          });
+        } catch (e) {}
+      })();
+    </script>
 </body>
 
 </html>

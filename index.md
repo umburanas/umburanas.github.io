@@ -1,11 +1,10 @@
 ---
 layout: default
 title: PUMA - Projeto Umburanas de Manejo Ambiental
-description: Documentação e evolução de um projeto agroflorestal sintrópico em Monte Branco, com foco em sustentabilidade e uso de recursos locais.
+description: Documentação e evolução do Projeto Umburanas de Manejo Ambiental (PUMA) em Monte Branco, com foco em sustentabilidade e uso de recursos locais.
+hero_title: PUMA
+hero_subtitle: Projeto Umburanas de Manejo Ambiental
 ---
-
-# PUMA
-## Projeto Umburanas de Manejo Ambiental
 
 Bem-vindo ao projeto Umburanas! Este site documenta nossa jornada na implementação de sistemas agroflorestais sintrópicos, compartilhando experiências, desafios e aprendizados para contribuir com a comunidade agroflorestal.
 

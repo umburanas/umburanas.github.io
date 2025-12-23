@@ -1,9 +1,8 @@
 # Site settings
 title: PUMA
-description: >- # this means to ignore newlines until "baseurl:"
-  Documentação e evolução de um projeto agroflorestal sintrópico em Monte Branco.
-  Compartilhando experiências, técnicas e aprendizados sobre sistemas agroflorestais
-  sustentáveis na região da Caatinga.
+description: >-
+  Projeto Umburanas de Manejo Ambiental (PUMA). Documentação e evolução do manejo ambiental em Monte Branco,
+  com foco em sustentabilidade, uso de recursos locais e sistemas agroflorestais sintrópicos na região da Caatinga.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://umburanas.github.io" # the base hostname & protocol for your site
 

@@ -176,6 +176,101 @@ body {
 }
 
 /* ========================================
+   HERO SECTION FOR HOME
+   ======================================== */
+.hero {
+    background: linear-gradient(135deg, #2c3e50 0%, #1abc9c 100%);
+    color: white;
+    padding: 80px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    margin: 0;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-1px);
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 60px 20px;
+    }
+    .hero-title {
+        font-size: 2.4rem;
+    }
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+/* ========================================
+   DARK MODE ADJUSTMENTS
+   ======================================== */
+@media (prefers-color-scheme: dark) {
+  body { color: #e6e6e6; background-color: #0f1419; }
+  .main-area { background: #121a21; }
+  .content-footer { background: #0f1419; border-top-color: #1f2a34; }
+  .content-inner h1 { color: #e6e6e6; }
+  .content-inner h2 { color: #cfd8dc; }
+  .modern-sidebar { background: linear-gradient(180deg, #1c2733 0%, #22303c 100%); }
+  .menu-link:hover { background: rgba(255, 255, 255, 0.08); }
+  .menu-link.active { background: rgba(52, 152, 219, 0.25); }
+  .hero { background: linear-gradient(135deg, #1c2733 0%, #0f766e 100%); }
+  .btn-secondary { border-color: rgba(255, 255, 255, 0.25); }
+}
+
+/* ========================================
    MOBILE RESPONSIVENESS
    ======================================== */
 
