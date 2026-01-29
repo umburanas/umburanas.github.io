@@ -80,6 +80,14 @@ body {
     color: #3498db;
 }
 
+.brand-logo {
+    display: block;
+    height: 40px;
+    width: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
+ 
 /* Sidebar menu */
 .sidebar-menu {
     flex: 1;
