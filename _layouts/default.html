@@ -40,25 +40,7 @@
         </ul>
       </nav>
 
-      <div class="sidebar-footer">
-        <div class="language-selector">
-          <div class="language-title">Idiomas</div>
-          <div class="language-flags">
-            {%- for lang in site.languages -%}
-              {%- assign is_active = lang == site.default_lang -%}
-              <a class="flag-btn {% if is_active %}active{% endif %}" href="{{ page.url | relative_url }}" aria-label="Idioma {{ lang | upcase }}">
-                {%- case lang -%}
-                  {%- when 'pt' -%}<span class="flag-icon flag-icon-br"></span>
-                  {%- when 'en' -%}<span class="flag-icon flag-icon-gb"></span>
-                  {%- when 'es' -%}<span class="flag-icon flag-icon-es"></span>
-                  {%- when 'de' -%}<span class="flag-icon">🇩🇪</span>
-                  {%- else -%}<span class="flag-icon">🌐</span>
-                {%- endcase -%}
-              </a>
-            {%- endfor -%}
-          </div>
-        </div>
-      </div>
+
     </aside>
 
     <div class="main-area">
