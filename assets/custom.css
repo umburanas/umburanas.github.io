@@ -83,7 +83,7 @@ body {
 .brand-logo {
     display: block;
     height: 120px; /* desktop size */
-    width: 96px;  /* ensure a square for perfect circle masking */
+    width: 120px;  /* ensure a square for perfect circle masking */
     margin: 0 auto;
     object-fit: contain;
     background-color: transparent; /* no fill behind PNG */
