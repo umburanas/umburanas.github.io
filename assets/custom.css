@@ -82,10 +82,19 @@ body {
 
 .brand-logo {
     display: block;
-    height: 40px;
+    height: 96px; /* larger on desktop for better visibility */
     width: auto;
     margin: 0 auto;
     object-fit: contain;
+    background-color: transparent; /* ensure no background fill behind PNG */
+    image-rendering: -webkit-optimize-contrast; /* crisper rendering on macOS/Safari */
+}
+
+/* Mobile-friendly size for the brand logo */
+@media screen and (max-width: 768px) {
+    .brand-logo {
+        height: 72px;
+    }
 }
  
 /* Sidebar menu */
