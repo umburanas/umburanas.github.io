@@ -82,18 +82,23 @@ body {
 
 .brand-logo {
     display: block;
-    height: 96px; /* larger on desktop for better visibility */
-    width: auto;
+    height: 120px; /* desktop size */
+    width: 96px;  /* ensure a square for perfect circle masking */
     margin: 0 auto;
     object-fit: contain;
-    background-color: transparent; /* ensure no background fill behind PNG */
-    image-rendering: -webkit-optimize-contrast; /* crisper rendering on macOS/Safari */
+    background-color: transparent; /* no fill behind PNG */
+    border-radius: 50%;            /* circular crop */
+    overflow: hidden;              /* enforce rounding clip */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* subtle shadow */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* light rim for contrast on dark sidebar */
+    image-rendering: -webkit-optimize-contrast; /* crisper on macOS/Safari */
 }
 
 /* Mobile-friendly size for the brand logo */
 @media screen and (max-width: 768px) {
     .brand-logo {
         height: 72px;
+        width: 72px;
     }
 }
  
