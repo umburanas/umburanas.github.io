@@ -204,7 +204,6 @@ body {
     background: linear-gradient(135deg, #2c3e50 0%, #1abc9c 100%);
     color: white;
     padding: 48px 40px; /* reduced top padding to tighten the header area */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .hero-inner {
