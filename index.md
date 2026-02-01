@@ -16,14 +16,16 @@ Iniciado em 2023, o projeto Umburanas é um pequeno núcleo agroflorestal que pr
 - Compartilhamento de conhecimento
 - Crescimento sustentável e colaborativo
 
-### 📍 Localização
-Monte Branco - Região da Caatinga
+### 📍 Localização: Monte Branco, Jequié, Bahia - Região de Caatinga
 
 ### 🎯 Áreas Implementadas
 - **SAF01**: 6x10m (março 2023) - Nossa primeira experiência
 - **SAF02**: 30x20m (dezembro 2023) - Expansão principal
-- **SAF03**: Área de horta (janeiro 2024)
-- **Áreas adicionais**: Expansões recentes com palma forrageira e sisal
+- **SAF03**: 10x15m (janeiro 2024) - Área de horta
+- **Áreas adicionais**: Expansões com palma forrageira e sisal (abertas no fim de 2024)
+    - **SAF04**: 20x15m (dezembro 2024) 
+    - **SAF05**: 20x15m (dezembro 2024) 
+    - **SAF06**: 20x20m (dezembro 2024) 
 
 ---
 
@@ -35,6 +37,9 @@ Monte Branco - Região da Caatinga
   - [SAF01 - Primeira Área](/evolucao/saf01)
   - [SAF02 - Expansão Principal](/evolucao/saf02)
   - [SAF03 - Área de Horta](/evolucao/saf03)
+  - [SAF04 - Atualmente palmas e sisal](/evolucao/saf04)
+  - [SAF05 - Atualmente palmas e sisal](/evolucao/saf05)
+  - [SAF06 - Atualmente palmas e sisal](/evolucao/saf06)
 
 ### 🌿 Técnicas e Recursos
 - [**Consórcios Agroflorestais**](consorcios) - Planejamento e implementação
@@ -53,7 +58,32 @@ Monte Branco - Região da Caatinga
 
 ---
 
-## 🌟 Destaques Recentes
+## Destaques Recentes
+
+### Dezembro 2026 - Reforçamos SAF01
+- ✅ reforço no SAF01
+  - capim nas entrelinhas 
+  - botamos mais muvuca de sementes nas primeiras linhas
+  - retiramos mudas de margaridão para area02; 
+  - palmas e bananeiras tiveram que ser retiradas ou podadas por causa da ventania.
+  - adicionamos uma muda de barriguda, uma de Cajá-manga, muita semente de Mamao, Pinha, Umburanas, Acácia-mangium
+  - organizamos as Juremas Pretas entre o arame para fazer cerca viva
+- ✅ reforço no SAF02 
+  - introduzimos Margaridão e Véu de noiva junto a cerca
+  - entramos com muvuca de sementes na segunda linha
+- ✅ reforço no SAF03 
+  - adicionamos muvuca de sementes e reforçamos 4 linhas com Palmas que tinham sido atacadas; entramos com muda de Pitangueira
+- ✅ reforço no SAF04 
+  - Capim e 2 linhas de legumes, bem como dois swales com Palma forrageira
+- ✅ reforço no SAF05 
+  - Capim e 2 linhas de legumes, bem como dois swales com Palma forrageira
+
+### Março de 2025 
+- ✅ reforço no SAF01 com capim, introduzimos Margaridão, Mamona, podamos as Palmas
+- ✅ área 3 foi inserida a Palma, depois dos gafanhotos terem acabado com a horta
+- ✅ reforço no SAF05 com Palmas, Sisal e Piteiras
+- ✅ reforço no SAF06 com Palmas, Sisal e Piteiras
+- ✅ entramos com sisal e piteiras nas entrelinhas do SAF02
 
 ### Fim de 2024 - Expansões e Melhorias
 - ✅ 3 novas áreas abertas com palma forrageira e sisal
@@ -61,22 +91,18 @@ Monte Branco - Região da Caatinga
 - ✅ Adição de 280 manivas de mandioca no SAF02
 - ✅ Implementação de cerca viva natural
 
-### Aprendizados Principais
-- 🌧️ **Timing é crucial**: Plantio fora de época trouxe desafios
-- 🐜 **Manejo integrado**: Controle de formigas e pragas
-- 💧 **Água é vida**: Importância da cisterna para o projeto
-- 🤝 **Comunidade**: Valor das trocas com vizinhos
-
 ---
 
 ## 📊 Dados do Projeto
 
 | Área | Tamanho | Início | Status |
 |------|---------|--------|--------|
-| SAF01 | 6x10m | Mar/2023 | Consolidado |
+| SAF01 | 6x10m  | Mar/2023 | Consolidado |
 | SAF02 | 30x20m | Dez/2023 | Em expansão |
-| SAF03 | Variável | Jan/2024 | Recuperação |
-| Novas áreas | Múltiplas | 2024 | Implementação |
+| SAF03 | 10x20m | Jan/2024 | Recuperação |
+| SAF04 | 20x15m | Dez/2024 | Recuperação |
+| SAF05 | 20x15m | Dez/2024 | Recuperação |
+| SAF06 | 20x20m | Dez/2024 | Recuperação |
 
 ---
 
